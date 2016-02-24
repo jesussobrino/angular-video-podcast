@@ -1,0 +1,36 @@
+<nav id="podcastProvider" class="navbar ">
+    <div class="container-fluid podcast--rss">
+        <div class="navbar-header">
+            <a class="" href="#"><img src="img/podcast.jpeg"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <a href="{{feed.link}}" target="_blank">
+                <h1 class="nav navbar-nav podcast__title">{{feed.title}}</h1>
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <rss-feed-selector></rss-feed-selector>
+                </li>
+            </ul>
+        </div>
+        <h3 class="nav navbar-nav">{{feed.description}}</h3>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-4 sidenav podcast--playlist">
+            <podcast-playlist ng-model="feed"></podcast-playlist>
+        </div>
+
+        <div class="col-sm-8 text-left">
+            <podcast-video-player current-podcast="currentPodcast"></podcast-video-player>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center podcast--footer">
+    <hr>
+    <p>Source code available coming soon on <a href="https://github.com/jesussobrino/angular-video-podcast">https://github.com/jesussobrino/angular-video-podcast</a>
+    </p>
+</footer>

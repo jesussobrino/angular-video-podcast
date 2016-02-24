@@ -1,0 +1,5 @@
+<video id="videoPlayer" class="current-video" controls autoplay
+       ng-click="videoClickHandler($event)"
+       ng-src="{{currentPodcast.link | trustResource}}" type="video/mp4">
+</video>
+<p class="current-video--description">{{currentPodcast.contentSnippet}}</p>

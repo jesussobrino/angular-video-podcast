@@ -1,0 +1,22 @@
+<form name="rssForm" novalidate>
+    <div class="podcast--selector">
+        <input id="podcastRssUrlInput" type="url" class="podcast--selector__url"
+               placeholder="Feed URL"
+               ng-required="required"
+               data-ng-model="feedSource.url" ng-change="feedSource.text = feedSources[0].text"/>
+        <div class="btn-group">
+            <button class="btn btn-warning" type="submit" ng-click="loadFeed(feedSource)"
+                    title="{{feedSource.text}}">
+                <span>{{feedSource.text}}</span>
+            </button>
+            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li ng-repeat="source in feedSources">
+                    <a href="" ng-click="loadFeed(source)">{{::source.text}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>

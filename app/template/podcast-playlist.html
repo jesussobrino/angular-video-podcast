@@ -1,0 +1,8 @@
+<ul id="playList" class="nav nav-pills nav-stacked play-list">
+    <li ng-repeat="podcast in feed.entries" ng-class="{'active': $index === selectedIndex}">
+        <a href="" ng-click="selectPodcastHandler(podcast, $index)" title="{{::podcast.contentSnippet}}"
+           class="play-list__podcast" auto-focus-on="$first">
+            <span>{{podcast.title}}</span>
+        </a>
+    </li>
+</ul>

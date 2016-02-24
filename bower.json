@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "name": "angular-video-podcast-app",
+  "description": "RSS Feed Video Podcast Player in AngularJS",
+  "repository": "https://github.com/jesussobrino/angular-video-podcast",
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "bootstrap": "~3.1.1",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x",
+    "jquery": "~2.1.4"
+  }
+}

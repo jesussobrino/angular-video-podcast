@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "name": "angular-video-podcast-app",
+  "description": "RSS Feed Video Podcast Player with AngularJS",
+  "repository": "https://github.com/jesussobrino/angular-video-podcast",
+  "devDependencies": {
+    "http-server": "^0.6.1",
+    "bower": "^1.3.1"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "dependencies": {}
+}

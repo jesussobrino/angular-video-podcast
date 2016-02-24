@@ -1,0 +1,62 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 20px;
+}
+
+.podcast--rss {
+    padding-bottom: 15px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 36%, #e1e1e1 40%, #f6f6f6 99%);
+}
+
+.podcast__title, .rss--feed__element {
+    padding-left: 15px;
+}
+
+.container-fluid .current-video {
+    min-height: 400px;
+    max-width: 700px;
+    border-radius: 25px;
+}
+
+.podcast--selector {
+    padding-right: 15px;
+}
+
+.podcast--selector .podcast--selector__url {
+    width: 150px;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.podcast--selector:hover .podcast--selector__url,
+.podcast--selector__url:focus {
+    width: 450px;
+}
+
+.podcast--playlist ul.nav-stacked {
+    height: 200px;
+    overflow-x: auto;
+}
+
+.podcast--playlist {
+    background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 0%, #e1e1e1 50%, #f6f6f6 100%);
+    padding-top: 70px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: .75;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.current-video--description {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.podcast--footer {
+    background: linear-gradient(to bottom, #ffffff 20%, #f1f1f1 0%, #e1e1e1 100%, #f6f6f6 50%);
+    padding-bottom: 15px;
+}
