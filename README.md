@@ -40,8 +40,8 @@ npm install
 This app is fully accessible pressing the `TAB` key and `Ctrl + TAB`, and pressing `ENTER` key for playing the selection or executing the main action available. 
 However, by requirements it's also usable using the arrow keys `(Up/Down/Right/Left)` and `ENTER` key. If we have in mind this app represents a podcast player, I decided the following behavior: 
 
-- To focus on the Playlist menu anytime that user press the `LEFT` Arrow Key
-- To focus on the Video Playback area anytime that user press the `RIGHT` Arrow Key
+- To focus on the "Playlist menu" anytime that user is located in "Video Playback" area and he presses the `LEFT` Arrow Key
+- To focus on the "Video Playback" area anytime that user is located in "Playlist menu" area and he presses the `RIGHT` Arrow Key
 
 ### RSS Feed
 
